@@ -1,0 +1,53 @@
+@import "../../../variabels";
+.item {
+  box-sizing: border-box;
+  position: relative;
+  border: 2px solid $gray;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px;
+  justify-content: space-between;
+
+  > h4 {
+    margin: 0 5px 5px 0;
+    font-size: 20px;
+  }
+
+  .temp {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    > img {
+      width: 60px;
+      animation: move 3s alternate ease-in-out infinite;
+    }
+    > span {
+      margin: 0;
+      margin-left: 20px !important;
+      font-size: 44px;
+    }
+  }
+}
+
+.x {
+  margin: 3px;
+  position: absolute;
+  background: transparent;
+  right: 10px;
+  top: 5px;
+  border: 0;
+  font-style: normal;
+
+  > i {
+    font-size: 35px;
+    opacity: 0.3;
+    transition-duration: 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
