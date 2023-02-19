@@ -9,7 +9,7 @@ export default function DashboardItem({ weather, deleteCard }) {
         <img src={weather.icon} alt="погода" />
         <span>{weather.temperature}°C</span>
       </div>
-      <div>
+      <div className={styles.info}>
         <span>Ветер: {weather.wind} м/с</span>
         <br />
         <span>Давление: {weather.pressure} мм</span>

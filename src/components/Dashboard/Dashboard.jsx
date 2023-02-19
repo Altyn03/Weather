@@ -12,7 +12,7 @@ export default function Dashboard({ cardItems, deleteCard }) {
 
   return (
     <div className={styles.dashboard}>
-      <h1 style={{ margin: "5px 20px", fontSize: "38px" }}>Погода сегодня</h1>
+      <h1 style={{ margin: "5px 37px", fontSize: "32px" }}>Погода сегодня</h1>
       <div className={styles.filter}>
         <p>Где сейчас теплее, чем</p>
         <div className={styles.rangeBlock}>
@@ -24,7 +24,7 @@ export default function Dashboard({ cardItems, deleteCard }) {
             value={temp}
             onChange={(e) => setTemp(e.target.value)}
           />
-          <div style={{ transform: `translateX(${-temp * 7}px)` }}>
+          <div style={{ transform: `translateX(${-temp * 6.5}px)` }}>
             <span className={styles.filterTemp}>{temp}°C</span>
           </div>
         </div>

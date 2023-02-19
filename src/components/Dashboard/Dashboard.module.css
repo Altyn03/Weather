@@ -10,6 +10,7 @@
 }
 
 .dashboardItems {
+  margin-left: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,13 +18,14 @@
 
 input[type="range"] {
   font-size: 1.5rem;
-  width: 12.5em;
+  width: 270px;
+  margin-left: 0;
 }
 
 input[type="range"] {
   color: #000000;
-  --thumb-height: 25px;
-  --thumb-width: 18px;
+  --thumb-height: 23px;
+  --thumb-width: 16px;
   --track-height: 0.125em;
   --track-color: rgba(0, 0, 0, 0.2);
   --brightness-hover: 180%;
@@ -40,12 +42,6 @@ input[type="range"] {
 
 input[type="range"]:active {
   cursor: grabbing;
-}
-
-input[type="range"]:disabled {
-  filter: grayscale(1);
-  opacity: 0.3;
-  cursor: not-allowed;
 }
 
 /* === WebKit specific styles === */
@@ -116,12 +112,12 @@ input[type="range"] {
 
 .rangeBlock {
   position: relative;
-  width: 310px;
+  width: 290px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .filterTemp {
-  font-size: 18px;
+  font-size: 16px;
 }
