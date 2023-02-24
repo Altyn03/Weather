@@ -73,7 +73,6 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: var(--box-fill);
   border-radius: var(--thumb-width, var(--thumb-height));
 
-  filter: brightness(100%);
   clip-path: polygon(
     100% -1px,
     var(--clip-edges) -1px,
@@ -87,12 +86,10 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]:hover::-webkit-slider-thumb {
-  filter: brightness(var(--brightness-hover));
   cursor: grab;
 }
 
 input[type="range"]:active::-webkit-slider-thumb {
-  filter: brightness(var(--brightness-down));
   cursor: grabbing;
 }
 
@@ -120,4 +117,27 @@ input[type="range"] {
 
 .filterTemp {
   font-size: 16px;
+}
+
+.zag {
+  margin: 5px 37px;
+  font-size: 32px;
+}
+
+@media (max-width: 653px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .zag {
+    width: 100%;
+    font-size: 26px;
+    margin-left: 30%;
+  }
+
+  .dashboardItems {
+    margin-left: 30%;
+  }
 }

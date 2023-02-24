@@ -12,7 +12,7 @@ export default function Dashboard({ cardItems, deleteCard }) {
 
   return (
     <div className={styles.dashboard}>
-      <h1 style={{ margin: "5px 37px", fontSize: "32px" }}>Погода сегодня</h1>
+      <h1 className={styles.zag}>Погода сегодня</h1>
       <div className={styles.filter}>
         <p>Где сейчас теплее, чем</p>
         <div className={styles.rangeBlock}>

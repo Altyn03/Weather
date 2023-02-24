@@ -78,10 +78,22 @@
 }
 
 .error {
+  display: inline-block;
   padding: 9px;
   margin: 12px 0 0 18px;
   font-size: 19px;
   color: red;
   font-weight: bold;
   border: 2px solid red;
+}
+
+@media (max-width: 653px) {
+  .input {
+    margin-right: 30%;
+  }
+
+  .button {
+    margin-top: 10px;
+    margin-left: 55%;
+  }
 }
