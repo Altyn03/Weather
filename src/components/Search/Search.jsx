@@ -72,11 +72,11 @@ export default function Search({ setCardItems, cardItems }) {
       />
       <ul className={styles.autocomplete}>
         {isFocus
-          ? completeSearch.map((weather, index) => {
+          ? completeSearch.map((weather) => {
               return (
                 <li
                   className={styles.autocompleteItem}
-                  key={index}
+                  key={weather.id}
                   onClick={itemClick}
                 >
                   {weather.name}
